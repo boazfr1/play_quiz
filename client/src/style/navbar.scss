@@ -1,0 +1,126 @@
+@import '../style/background.scss';
+@import "./variables.scss";
+
+.navbar-container-computer {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3.5px solid $primaryColor;
+    position: relative;
+    z-index: 50;
+    background-color: white;
+    padding-right: 3vw;
+    padding-left: 3vw;
+
+    .nav-quiz-btn {
+        height: 3.1vh;
+        color: #0C3249;
+    }
+
+    .nav-quiz-btn-active {
+        font-weight: 900;
+        background-color: $green-color;
+        color: white;
+        height: 3.1vh;
+    }
+
+    .nav-quiz-btn:hover,
+    .nav-quiz-btn-active:hover {
+        background-color: $green-color;
+        color: white;
+    }
+
+    .first-section {
+        display: flex;
+        align-items: center;
+
+        button {
+            font-size: 2vh;
+        }
+    }
+
+    .navbar-logo-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .links-container,
+    .btn-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .vl-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .vl {
+        border-left: 1.8px solid #0C3249;
+        height: 2vh;
+        overflow: hidden;
+        margin: 10px;
+    }
+
+
+    .navbar-container {
+        display: flex;
+        justify-content: flex;
+        align-items: center;
+        gap: 0.875rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .navbar-logo-name {
+            font-size: 2vh;
+        }
+
+        .navbar-logo {
+            height: 3vh;
+        }
+    }
+
+    a {
+        color: $primaryColor !important;
+        cursor: pointer;
+    }
+
+    #logo-name {
+        font-weight: 1000;
+        font-size: 100%;
+        margin-left: 1vw;
+    }
+}
+
+
+
+.navbar-container-phone {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    height: 8vh;
+    box-shadow: 0px 0.3px 3px grey;
+
+
+    .img-container {
+        display: flex;
+        align-items: center;
+        width: 13vw;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .hide-monkey {
+        display: none !important;
+    }
+}
